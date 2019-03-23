@@ -1,0 +1,22 @@
+{
+  "name": "node_basic",
+  "version": "1.0.0",
+  "description": "Node app",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacwillmington/node-js.git"
+  },
+  "author": "Zac Willmington",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zacwillmington/node-js/issues"
+  },
+  "homepage": "https://github.com/zacwillmington/node-js#readme",
+  "dependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
