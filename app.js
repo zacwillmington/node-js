@@ -1,20 +1,16 @@
-// const express = require('express');
-// const app = express();
-
-// app.get('/', (req, res) =>{
-//     res.send("Some text");
-// });
-
-// app.listen(3000);
-
     const fs = require('fs')
-
     const fileName = 'target.txt';
+
+    // is synchronous and blocking code much like Ruby.(Bad practice for Node.js) 
+    // const data = fs.readFileSync(fileName);
+    // console.log(data.toString());
+
+    const errorHandler = (err) => console.log(err);
+    const datahandler = data => console.log(data.toString());
+    // is asynchronous 
     fs.readFile(fileName, (err, data) => {
-        if(err) {
-            console.log(err);
-        }
-            console.log(data.toString());
+        if(err) errorHandler(err);
+        datahandler(data);
     })
 
     console.log("node js")
